@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%
+        }
+        .navbar{
+            background-color: black;
+            display: flex;
+            
+            justify-content: space-evenly;
+        }
+        .navbar a {
+    color: wheat;
+    text-decoration: none;
+    padding: 20px;
+}
+     .thomas-image{
+            width: 190px;
+            border-radius: 50%;
+            text-align: center;
+     }
+
+.navbar a:hover {
+    background-color: beige;
+    color: darkcyan;
+}
+@media(max-width:576px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar a {
+     font-size: small;
+    }
+}
+        
+    </style>
+</head>
+<body>
+<nav class="navbar">
+<a href="#career">Career</a>
+<a href="#childhood">Childhood</a>
+<a href="#relation">Relationships</a>
+<a href="#scientific">Scietific career</a>
+<a href="#achievements">Achievements</a>
+<a href="#gallery">Gallery</a>
+</nav>
+<div style="text-align: center;">
+    <img src="data:image/jpeg;base64,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"
+    class="thomas-image"alt=""/>
+
+
+</div>
+<h2 id="career">Career</h2>
+<p>
+    Thomas Edison began his career as a news butcher, selling newspapers, candy, and vegetables on trains running from Port Huron to Detroit. He turned a $50-a-week profit by age 13, most of which went to buying equipment for electrical and chemical experiments.[20] At age 15, in 1862, he saved 3-year-old Jimmie MacKenzie from being struck by a runaway train.[21] Jimmie's father, station agent J. U. MacKenzie of Mount Clemens, Michigan, was so grateful that he trained Edison as a telegraph operator. Edison's first telegraphy job away from Port Huron was at Stratford Junction, Ontario, on the Grand Trunk Railway.[22] He also studied qualitative analysis and conducted chemical experiments until he left the job rather than be fired after being held responsible for a near collision of two trains.[23][24][25]
+
+Edison obtained the exclusive right to sell newspapers on the road, and, with the aid of four assistants, he set in type and printed the Grand Trunk Herald, which he sold with his other papers.[25] This began Edison's long streak of entrepreneurial ventures, as he discovered his talents as a businessman. Ultimately, his entrepreneurship was central to the formation of some 14 companies, including General Electric, formerly one of the largest publicly traded companies in the world.[26][27]
+</p>
+<h2 id="childhood">Childhood</h2>
+<p>
+    Thomas Edison was born in 1847 in Milan, Ohio, but grew up in Port Huron, Michigan, after the family moved there in 1854.[8] He was the seventh and last child of Samuel Ogden Edison Jr. (1804–1896, born in Marshalltown, Nova Scotia) and Nancy Matthews Elliott (1810–1871, born in Chenango County, New York).[9][10] His patrilineal family line was Dutch by way of New Jersey;[11] the surname had originally been "Edeson".[12]
+
+His great-grandfather, loyalist John Edeson, fled New Jersey for Nova Scotia in 1784. The family moved to Middlesex County, Upper Canada, around 1811, and his grandfather, Capt. Samuel Edison Sr. served with the 1st Middlesex Militia during the War of 1812. His father, Samuel Edison Jr. moved to Vienna, Ontario, and fled to Ohio after his involvement in the Rebellion of 1837.[13]
+
+Edison was taught reading, writing, and arithmetic by his mother, a former school teacher. He attended school for only a few months. However, one biographer described him as a very curious child who learned most things by reading on his own.[14] As a child, he became fascinated with technology and spent hours working on experiments at home.[15]
+
+Edison developed hearing problems at the age of 12. The cause of his deafness has been attributed to a bout of scarlet fever during childhood and recurring untreated middle-ear infections. He subsequently concocted elaborate fictitious stories about the cause of his deafness.[16] He was completely deaf in one ear and barely hearing in the other. It is alleged[17] that Edison would listen to a music player or piano by clamping his teeth into the wood to absorb the sound waves into his skull. As he got older, Edison believed his hearing loss allowed him to avoid distraction and concentrate more easily on his work. Modern-day historians and medical professionals have suggested he may have had ADHD.[15]
+
+It is known that early in his career he enrolled in a chemistry course at The Cooper Union for the Advancement of Science and Art to support his work on a new telegraphy system with Charles Batchelor. This appears to have been his only enrollment in courses at an institution of higher learning.[18][19]
+
+
+</p>
+<h2 id="relation">Relationships</h2>
+<p>
+    Edison's major innovation was the establishment of an industrial research lab in 1876. It was built in Menlo Park, a part of Raritan Township (now named Edison Township in his honor) in Middlesex County, New Jersey, with the funds from the sale of Edison's quadruplex telegraph. After his demonstration of the telegraph, Edison was not sure that his original plan to sell it for $4,000 to $5,000 was right, so he asked Western Union to make a bid. He was surprised to hear them offer $10,000 ($269,294 in 2023), which he gratefully accepted.[31] The quadruplex telegraph was Edison's first big financial success, and Menlo Park became the first institution set up with the specific purpose of producing constant technological innovation and improvement. Edison was legally credited with most of the inventions produced there, though many employees carried out research and development under his direction. His staff was generally told to carry out his directions in conducting research, and he drove them hard to produce results.
+
+William Joseph Hammer, a consulting electrical engineer, started working for Edison and began his duties as a laboratory assistant in December 1879. He assisted in experiments on the telephone, phonograph, electric railway, iron ore separator, electric lighting, and other developing inventions. However, Hammer worked primarily on the incandescent electric lamp and was put in charge of tests and records on that device.
+
+In 1880, he was appointed chief engineer of the Edison Lamp Works. In his first year, the plant under general manager Francis Robbins Upton turned out 50,000 lamps. According to Edison, Hammer was "a pioneer of incandescent electric lighting".[32] Frank J. Sprague, a competent mathematician and former naval officer, was recruited by Edward H. Johnson and joined the Edison organization in 1883. One of Sprague's contributions to the Edison Laboratory at Menlo Park was to expand Edison's mathematical methods. Despite the common belief that Edison did not use mathematics, analysis of his notebooks reveal that he was an astute user of mathematical analysis conducted by his assistants such as Francis Robbins Upton, for example, determining the critical parameters of his electric lighting system including lamp resistance by an analysis of Ohm's law, Joule's law and economics.[33]
+
+Nearly all of Edison's patents were utility patents, which were protected for 17 years and included inventions or processes that are electrical, mechanical, or chemical in nature. About a dozen were design patents, which protect an ornamental design for up to 14 years. As in most patents, the inventions he described were improvements over prior art. The phonograph patent, in contrast, was unprecedented in describing the first device to record and reproduce sounds.[34]
+
+In just over a decade, Edison's Menlo Park laboratory had expanded to occupy two city blocks. Edison said he wanted the lab to have "a stock of almost every conceivable material".[35] A newspaper article printed in 1887 reveals the seriousness of his claim, stating the lab contained "eight thousand kinds of chemicals, every kind of screw made, every size of needle, every kind of cord or wire, hair of humans, horses, hogs, cows, rabbits, goats, minx, camels ... silk in every texture, cocoons, various kinds of hoofs, shark's teeth, deer horns, tortoise shell ... cork, resin, varnish and oil, ostrich feathers, a peacock's tail, jet, amber, rubber, all ores ..." and the list goes on.[36]
+
+Over his desk Edison displayed a placard with Sir Joshua Reynolds' famous quotation: "There is no expedient to which a man will not resort to avoid the real labor of thinking."[37] This slogan was reputedly posted at several other locations throughout the facility.
+
+In Menlo Park, Edison had created the first industrial laboratory concerned with creating knowledge and then controlling its application.[38] Edison's name is registered on 1,093 patents.[39]
+
+
+</p>
+<h2 id="scientific">Scientific career</h2>
+<p>After devising a commercially viable electric light bulb on October 21, 1879, Edison developed an electric "utility" to compete with the existing gas light utilities.[73] On December 17, 1880, he founded the Edison Illuminating Company, and during the 1880s, he patented a system for electricity distribution. The company established the first investor-owned electric utility. On September 4, 1882, in Pearl Street, New York City, his 600 kW cogeneration steam-powered generating station, Pearl Street Station's, electrical power distribution system was switched on, providing 110 volts direct current (DC), initially to 59 customers in lower Manhattan,[74] quickly growing to 508 customers with 10,164 lamps. The power station was decommissioned in 1895.
+
+    Eight months earlier in January 1882, to demonstrate feasibility, Edison had switched on the 93 kW first steam-generating power station at Holborn Viaduct in London. This was a smaller 110 V DC supply system, eventually supplying 3,000 street lights and a number of nearby private dwellings, but was shut down in September 1886 as uneconomic, since he was unable to extend the premises.
+    
+    On January 19, 1883, the first standardized incandescent electric lighting system employing overhead wires began service in Roselle, New Jersey.
+
+</p>
+<h2 id="achievements">Achievements</h2>
+<p>
+    After devising a commercially viable electric light bulb on October 21, 1879, Edison developed an electric "utility" to compete with the existing gas light utilities.[73] On December 17, 1880, he founded the Edison Illuminating Company, and during the 1880s, he patented a system for electricity distribution. The company established the first investor-owned electric utility. On September 4, 1882, in Pearl Street, New York City, his 600 kW cogeneration steam-powered generating station, Pearl Street Station's, electrical power distribution system was switched on, providing 110 volts direct current (DC), initially to 59 customers in lower Manhattan,[74] quickly growing to 508 customers with 10,164 lamps. The power station was decommissioned in 1895.
+
+Eight months earlier in January 1882, to demonstrate feasibility, Edison had switched on the 93 kW first steam-generating power station at Holborn Viaduct in London. This was a smaller 110 V DC supply system, eventually supplying 3,000 street lights and a number of nearby private dwellings, but was shut down in September 1886 as uneconomic, since he was unable to extend the premises.
+
+On January 19, 1883, the first standardized incandescent electric lighting system employing overhead wires began service in Roselle, New Jersey.
+</p>
+<h2 id="gallery">Gallery</h2>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            background-color: azure;
+            width: 30%;
+            margin: auto;
+            padding: 2%;
+
+        }
+
+        .from-field input,
+        .from-field select,
+        .from-field textarea {
+            width: 100%;
+            padding: 10px 0px;
+
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+    @media (max-width:576px) {
+        .container {
+            width: 90%;
+        }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <form class="container" action="./login.html">
+
+
+        <h1>
+            Signup
+        </h1>
+
+        <p class="from-field">
+            <input type="text" required placeholder="enter your name" />
+        </p>
+
+        <p class="from-field">
+            <input type="email" required placeholder="enter your email" />
+        </p>
+        <p class="from-field">
+            <input type="password" required placeholder="enter your password" />
+        </p>
+        <p class="from-radio">
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+            <input type="radio" name="gender" />Other
+        </p>
+        <p class="from-field">
+            <select>
+                <option value=""> enter your city </option>
+                <option value="">kanchikacherla</option>
+                <option value="">vijayawada</option>
+
+
+            </select>
+        </p>
+        <p class="from-field">
+            <textarea placeholder="enter your address"></textarea>
+        </p>
+        <p class="from-field">
+            <input type="date" />
+        </p>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
